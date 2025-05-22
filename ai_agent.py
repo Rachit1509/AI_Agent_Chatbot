@@ -20,7 +20,8 @@ groq_llm=ChatGroq(model="llama-3.3-70b-versatile")
 search_tool=TavilySearchResults(max_results=2)
 
 #Step3: Setup AI Agent with Search tool functionality
-from langgraph.prebuilt import create_react_agent
+# If using langchain, use the appropriate agent creation import, e.g.:
+from langchain.agents import create_react_agent
 from langchain_core.messages.ai import AIMessage
 
 system_prompt="Act as an AI chatbot who is smart and friendly"
